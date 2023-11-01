@@ -1,0 +1,159 @@
+ <div>
+ 
+    <h1 id="headingForResult"></h1>
+    <p id="subHeadingResults">Klicka på gasnamnet för att läsa mer om produkten</p>
+ 
+    <table id="gas-guide-table">
+        <th>Gas</th>
+        <th>Rekommenderad <span style="color:#009B3C; font-size: 50px; vertical-align: middle;">&#9679;</span></th>
+        <th>Alternativ <span style="color:#FFD200; font-size: 50px; vertical-align: middle;">&#9679;</span></th>
+        <th>Kan ge fördelar <span style="color:#DC7800; font-size: 50px; vertical-align: middle;">&#9679;</span>
+        </th>
+    </table>
+ 
+    <div id="table-description-div">
+        <p id="descriprion-table-p"><span
+                style="color:#009B3C; font-size: 70px; vertical-align: middle;">&#9679;</span><span
+                style="width: 85%;display: inline-flex;">Det bästa valet som alltid fungerar. Det är en
+                PREMIUMPRODUKT som
+                alltid överträffar standardprodukterna när det gäller produktivitet, kvalitet och
+                arbetsmiljö.</span> </p>
+        <p id="descriprion-table-p"> <span
+                style="color:#FFD200; font-size: 70px; vertical-align: middle;">&#9679;</span><span
+                style="width: 85%;display: inline-flex;">En alternativ standardprodukt som får jobbet gjort men
+                saknar
+                fördelarna med premiumprodukterna.</span></p>
+        <p id="descriprion-table-p"><span
+                style="color:#DC7800; font-size: 70px; vertical-align: middle;">&#9679;</span><span
+                style="width: 85%;display: inline-flex;">Produkter som kan ge kvalitets- och produktivitetsfördelar
+                i
+                speciella fall (klicka på gasnamnet för att läsa mer om produkten).</span></p>
+    </div>
+ 
+    <h3 id="moreInfoHeading">Vill du veta mer?</h3>
+ 
+    <!-- Quick links -->
+    <div id="quickLinks">
+        <button id="contactSupportButton" onclick="contactUsForm()">Kontakta vår
+            support</button>
+        <button id="targetBlankLinks"> <a href="https://www.linde-gas.se/sv/customer_service_ren/agent_finder/"
+                target="_blank">Hitta försäljningsställe </a></button>
+        <button id="targetBlankLinks"> <a
+                href="https://www.linde-gas.se/shop/sv/se-ig/home?utm_source=aga.se&utm_medium=aga_referral&utm_content=link&utm_campaign=se-main-page_navigation_eng"
+                target="_blank">Besök vår onlineshop</a></button>
+        <p style="color: #00305c;font-size: 20px; margin-top: 2%; margin-bottom: 3%; font-weight: 700;">Ytterligare information finns
+            på
+            Lindes hemsida. Klicka<a href="https://www.linde-gas.se/en/processes_ren/welding/index.html" target="_blank"
+                style="color: #00A0E1"> här</a></p>
+    </div>
+    <p id="contactUsText">Kontakta Linde WELDONOVA® process support team om du vill veta mer. Du kan även söka efter
+        ditt närmaste
+        försäljningsställe eller besöka Lindes Online shop via länkarna nedan. </p>
+ 
+    <!-- non-Mison user form -->
+ 
+    <form id="nonMisonUserForm">
+        <div id="modalForm" style="display: none;">
+            <div id="modalFormHeading">
+                <h3>Fyll i uppgifterna för att bli kontaktad</h3>
+                <p class="close-modal">&#x2715;</p>
+            </div>
+            <hr id="modalFormHeadingHr">
+            <label>Förnamn*</label><br>
+            <input type="text" id="firstName" required></input><br>
+            <label>Efternamn*</label><br>
+            <input type="text" id="lastName" required></input><br>
+            <label>Företag*</label><br>
+            <input type="text" id="company" required></input><br>
+            <label>E-post*</label><br>
+            <input type="text" id="emailAddress" required></input><br>
+            <div id="contactMeDiv">
+                <input type="checkbox" id="contactMe" name="contactMe"><br>
+                <label for="contactMe">Jag vill bli kontaktad</label><br>
+            </div><br>
+            <div id="contactMeDivAdditional" style="display: none;">
+                <label>Telefonnummer*</label><br>
+                <input type="text" id="phoneNumber"></input><br>
+                <label>Önskad tid att bli kontaktad*</label>
+                <select name="contactRequestTime" id="contactRequestTime">
+                    <option value="" selected>Välj ett alternativ*</option>
+                    <option value="8:00 - 12:00">8:00 - 12:00</option>
+                    <option value="12:00 - 16:00">12:00 - 16:00</option>
+                    <option value="12:00 - 16:00">12:00 - 16:00</option>
+                </select><br>
+            </div>
+            <label>Meddelande</label><br>
+            <textarea id="message"></textarea><br>
+            <div id="sendNewsDiv">
+                <input type="checkbox" id="sendNews"><br>
+                <label for="sendNews">Ja tack, håll mig uppdaterad med relevanta nyheter och tips om svetsning, skärning
+                    och värmning via e-post</label><br>
+            </div>
+            <button type="submit" class="submitContactForm" id="submitButton">Skicka</button>
+        </div>
+    </form>
+ 
+    <!-- Mison user form -->
+ 
+    <form id="MisonUserForm">
+        <div id="modalFormMison" style="display: none;">
+            <div id="modalFormHeading">
+                <h3>Fyll i uppgifterna för att bli kontaktad</h3>
+                <p class="close-modal-mison">&#x2715;</p>
+            </div>
+            <hr id="modalFormHeadingHr">
+            <label>Förnamn*</label><br>
+            <input type="text" id="firstNameMison" required></input><br>
+            <label>Efternamn*</label><br>
+            <input type="text" id="lastNameMison" required></input><br>
+            <label>E-post*</label><br>
+            <input type="text" id="emailAddressMison" required></input><br>
+            <label>Meddelande*</label><br>
+            <textarea id="messageMison"></textarea><br>
+            <div id="sendNewsDiv">
+                <input type="checkbox" id="sendNewsMison"><br>
+                <label for="sendNewsMison">Ja tack, håll mig uppdaterad med relevanta nyheter och tips om svetsning,
+                    skärning och värmning via e-post</label><br>
+            </div>
+            <button type="submit" class="submitContactForm" id="submitButton">Skicka</button>
+        </div>
+    </form>
+ 
+    <!-- TODO BUG position change (top) on selection, can't figure out why, CSS class related  -->
+ 
+    <form id="ratingForm">
+        <div id="ratingCardDiv">
+            <h4 id="ratingArea1"></h4>
+            <p id="ratingArea2"></p>
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+            </div>
+            <button type="submit" class="submitRating" id="submitButton">Skicka</button>
+    </form>
+ 
+    <!-- TODO what is this for? -->
+    <p id="userEmail" hidden></p>
+    <p></p>
+    <div style="display: inline-flex; margin-top: 1%;">
+ 
+    </div>
+    <div style="float: right; margin-bottom: 2%;">
+        <div id="server-results">
+            <!-- For server results -->
+        </div>
+        <p style="margin-bottom: 5%;"></p>
+    </div>
+    <br>
+ 
+ </div>
+ </div>
+ </div>
