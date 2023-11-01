@@ -1,0 +1,720 @@
+<style>
+    @media only screen and (max-width: 600px) {
+        #parent-div-choice {
+            width: 98%;
+            margin: 0 auto;
+            font-family: LindeDaxOffice;
+            margin-top: 4%;
+            margin-bottom: 5%;
+        }
+
+        #left-side-content {
+            color: #00305c;
+            display: inline-block;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        #find-gas,
+        #find-material {
+            font-family: LindeDaxOffice;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            padding: 3%;
+            display: inline-block;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            width: -webkit-fill-available;
+        }
+
+        #find-material {
+            background-color: #00305c;
+        }
+
+        #find-gas {
+            background-color: #00A0E1;
+            margin-top: 0px;
+        }
+
+        #find-gas:hover,
+        #find-material:hover {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            transition: ease-in 500ms;
+        }
+
+
+        #right-side-content img {
+            display: none;
+        }
+
+        #mobileImgDiv {
+            width: 98%;
+        }
+
+        #mobileImgDiv img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        #textDivFindGas {
+            padding: 2%;
+            border-radius: 5px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.43);
+            width: 98%;
+            margin-bottom: 5%;
+        }
+
+        #parent-div-find-gas {
+            font-family: LindeDaxOffice;
+            color: #00305c;
+            text-align: center;
+            width: 100%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        #gas-tab-switcher {
+            /* width: 80%; */
+            margin: 0 auto;
+            background-color: #EBF0F2;
+            padding: 2% 0% 2% 1%;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            text-align: left;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            display: flex;
+        }
+
+        #button-switch,
+        #button-switch-one,
+        #button-switch-two,
+        #button-switch-three,
+        #button-switch-four {
+            border: none;
+            background-color: #EBF0F2;
+            color: #00305c;
+            font-size: 13px;
+            text-align: center;
+        }
+
+
+
+        #button-switch-last {
+            border: none;
+            background-color: #EBF0F2;
+            color: #00305c;
+            font-size: 13px;
+            padding-right: 1%;
+            text-align: center;
+        }
+
+        #active1,
+        #active2,
+        #active3,
+        #active4,
+        #active5 {
+            background-color: #00A0E1;
+            height: 5px;
+            width: 80%;
+            /* float: left; */
+        }
+
+        .listOfMaterials {
+            border: 1px solid #00305c;
+            padding: 2%;
+            border-radius: 60px;
+            font-size: 18px;
+            margin-right: 1%;
+            margin-bottom: 2%;
+        }
+
+        .listOfMaterials:hover {
+            background-color: #00305c;
+            color: white;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #PURGING,
+        #PLAZMA,
+        #MICList,
+        #TIG,
+        #MIGbrazing {
+            margin-bottom: 5%;
+        }
+
+        #findGasP {
+            margin-bottom: 5%;
+            line-height: 4.3vh;
+        }
+
+        #saveToFavoritesMobile {
+            display: block;
+        }
+    }
+
+    /* End of mobile design */
+
+    @media only screen and (min-width: 601px) and (max-width: 1200px) {
+        #parent-div-choice {
+            display: flex;
+            width: 98%;
+            margin: 0 auto;
+            font-family: LindeDaxOffice;
+            margin-top: 4%;
+            margin-bottom: 5%;
+        }
+
+        #left-side-content {
+            color: #00305c;
+            display: inline-block;
+            width: 51%;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #find-gas,
+        #find-material {
+            font-family: LindeDaxOffice;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            padding: 2.5%;
+            display: inline-block;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            width: -webkit-fill-available;
+        }
+
+        #find-material {
+            background-color: #00305c;
+        }
+
+        #find-gas {
+            background-color: #00A0E1;
+            margin-top: 0px;
+        }
+
+        #find-gas:hover,
+        #find-material:hover {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            transition: ease-in 500ms;
+        }
+
+        #right-side-content {
+            display: inline-block;
+            width: 48%;
+        }
+
+        #right-side-content img {
+            width: 100%;
+            object-fit: cover;
+            margin-left: 8%;
+            border-radius: 5px;
+        }
+
+        #parent-div-find-gas {
+            font-family: LindeDaxOffice;
+            color: #00305c;
+            text-align: center;
+            width: 100%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        #gas-tab-switcher {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #EBF0F2;
+            padding: 2% 0% 2% 1%;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            text-align: left;
+            margin-top: 5%;
+            margin-bottom: 3%;
+            display: flex;
+        }
+
+        #button-switch,
+        #button-switch-one,
+        #button-switch-two,
+        #button-switch-three,
+        #button-switch-four {
+            border: none;
+            background-color: #EBF0F2;
+            color: #00305c;
+            font-size: 20px;
+            text-align: center;
+        }
+
+
+
+        #button-switch-last {
+            border: none;
+            background-color: #EBF0F2;
+            color: #00305c;
+            font-size: 20px;
+            padding-right: 1%;
+            text-align: center;
+        }
+
+        #active1,
+        #active2,
+        #active3,
+        #active4,
+        #active5 {
+            background-color: #00A0E1;
+            height: 5px;
+            width: 80%;
+            /* float: left; */
+        }
+
+        .listOfMaterials {
+            border: 1px solid #00305c;
+            padding: 1%;
+            border-radius: 60px;
+            width: 40%;
+            font-size: 18px;
+            display: inline-block;
+            margin-right: 1%;
+            margin-bottom: 1%;
+        }
+
+        .listOfMaterials:hover {
+            background-color: #00305c;
+            color: white;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #PURGING,
+        #PLAZMA,
+        #MICList,
+        #TIG,
+        #MIGbrazing {
+            margin-bottom: 5%;
+        }
+
+        #mobileImgDiv {
+            display: none;
+        }
+
+        #findGasP {
+            margin-bottom: 5%;
+            line-height: 4.4vh;
+        }
+
+        #saveToFavoritesMobile {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 1201px) {
+        #parent-div-choice {
+            display: flex;
+            width: 98%;
+            margin: 0 auto;
+            font-family: LindeDaxOffice;
+            margin-top: 4%;
+            margin-bottom: 5%;
+        }
+
+        #left-side-content {
+            color: #00305c;
+            display: inline-block;
+            width: 51%;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #find-gas,
+        #find-material {
+            font-family: LindeDaxOffice;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            padding: 2.5%;
+            display: inline-block;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            width: -webkit-fill-available;
+        }
+
+        #find-material {
+            background-color: #00305c;
+        }
+
+        #find-gas {
+            background-color: #00A0E1;
+            margin-top: 0px;
+        }
+
+        #find-gas:hover,
+        #find-material:hover {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            transition: ease-in 500ms;
+        }
+
+        #right-side-content {
+            display: inline-block;
+            width: 48%;
+        }
+
+        #right-side-content img {
+            width: 100%;
+            object-fit: cover;
+            margin-left: 8%;
+            border-radius: 5px;
+        }
+
+        #parent-div-find-gas {
+            font-family: LindeDaxOffice;
+            color: #00305c;
+            text-align: center;
+            width: 100%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        #gas-tab-switcher {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #EBF0F2;
+            padding: 2% 0% 2% 1%;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            text-align: left;
+            margin-top: 5%;
+            margin-bottom: 3%;
+            display: flex;
+        }
+
+        #button-switch,
+        #button-switch-one,
+        #button-switch-two,
+        #button-switch-three,
+        #button-switch-four {
+            border: none;
+            background-color: #EBF0F2;
+            color: #00305c;
+            font-size: 20px;
+            text-align: center;
+        }
+
+
+
+        #button-switch-last {
+            border: none;
+            background-color: #EBF0F2;
+            color: #00305c;
+            font-size: 20px;
+            padding-right: 1%;
+            text-align: center;
+        }
+
+        #active1,
+        #active2,
+        #active3,
+        #active4,
+        #active5 {
+            background-color: #00A0E1;
+            height: 5px;
+            width: 80%;
+            /* float: left; */
+        }
+
+        .listOfMaterials {
+            border: 1px solid #00305c;
+            padding: 1%;
+            border-radius: 60px;
+            width: 40%;
+            font-size: 18px;
+            display: inline-block;
+            margin-right: 1%;
+            margin-bottom: 1%;
+        }
+
+        .listOfMaterials:hover {
+            background-color: #00305c;
+            color: white;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #PURGING,
+        #PLAZMA,
+        #MICList,
+        #TIG,
+        #MIGbrazing {
+            margin-bottom: 5%;
+        }
+
+        #mobileImgDiv {
+            display: none;
+        }
+
+        #findGasP {
+            margin-bottom: 3%;
+            line-height: 3.8vh;
+        }
+
+        #saveToFavoritesMobile {
+            display: none;
+        }
+    }
+
+    #chooseProccess {
+        text-align: center;
+        margin-bottom: 2%;
+        color: #00A0E1;
+    }
+
+    #warningMessage {
+        animation: shake 0.5s;
+        animation-iteration-count: 10s;
+    }
+
+
+    @keyframes shake {
+        0% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
+
+        10% {
+            transform: translate(-1px, -2px) rotate(-1deg);
+        }
+
+        20% {
+            transform: translate(-3px, 0px) rotate(1deg);
+        }
+
+        30% {
+            transform: translate(3px, 2px) rotate(0deg);
+        }
+
+        40% {
+            transform: translate(1px, -1px) rotate(1deg);
+        }
+
+        50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+
+        60% {
+            transform: translate(-3px, 1px) rotate(0deg);
+        }
+
+        70% {
+            transform: translate(3px, 1px) rotate(-1deg);
+        }
+
+        80% {
+            transform: translate(-1px, -1px) rotate(1deg);
+        }
+
+        90% {
+            transform: translate(1px, 2px) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+        }
+    }
+</style>
+</head>
+
+<div id="parent-div-find-gas" style="display: none">
+    <h1 style="margin-bottom: 3%; font-size: 25px; font-weight: 500;">Hitta rätt skyddsgas </h1>
+    <p id="chooseProccess">Välj svetsmetod </p>
+    <p id="warningMessage" hidden>Välj svetsmetod </p>
+    <div class="w3-bar w3-black" id="gas-tab-switcher">
+
+        <div style="display: inline-block; width: 24%; text-align: center;" id="purging-div">
+            <button class="w3-bar-item w3-button" id="button-switch-one"
+                onclick="openProcess('ROTSKYDD')">ROTSKYDD*</button>
+            <hr id="active1" style="display: none;" class="hr-class">
+            </hr>
+        </div>
+
+        <div style="display: inline-block; width: 24%; text-align: center;" id="plazma-div">
+            <button class="w3-bar-item w3-button" id="button-switch-two" onclick="openProcess('PLASMA')">PLASMA</button>
+            <hr id="active2" style="display: none;" class="hr-class">
+            </hr>
+        </div>
+
+        <div style="display: inline-block; width: 24%; text-align: center;" id="mic-div">
+
+            <button class="w3-bar-item w3-button" id="button-switch-three"
+                onclick="openProcess('MIG/MAG')">MIG/MAG*</button>
+            <hr id="active3" style="display: none;" class="hr-class">
+            </hr>
+        </div>
+        <div style="display: inline-block; width: 24%; text-align: center;" id="mic-div">
+
+            <button class="w3-bar-item w3-button" id="button-switch-four" onclick="openProcess('MIG lödning')">
+                MIG lödning</button>
+            <hr id="active4" style="display: none;" class="hr-class">
+            </hr>
+        </div>
+
+        <div style="display: inline-block; width: 24%; text-align: center;" id="tig-div">
+
+            <button class="w3-bar-item w3-button" id="button-switch-last" onclick="openProcess('TIG')">TIG</button>
+            <hr id="active5" style="display: none;" class="hr-class">
+            </hr>
+        </div>
+
+    </div>
+    <p style="text-align: center; margin-bottom: 2%; color: #00A0E1;">Välj material</p>
+
+    <div id="ROTSKYDD" class="w3-container gas">
+        <ul>
+            <li class="listOfMaterials" onclick="getResults('Olegerat/låglegerat stål')">Olegerat/låglegerat stål</li>
+            <li class="listOfMaterials" onclick="getResults('Rostfritt stål, austenitiskt')">Rostfritt stål,
+                austenitiskt
+            </li>
+            <li class="listOfMaterials" onclick="getResults('Rostfritt stål, duplex')">Rostfritt stål, duplex
+            </li>
+            <li class="listOfMaterials" onclick="getResults('Aluminium och aluminiumlegeringar')">Aluminium och
+                aluminiumlegeringar
+            </li>
+            <li class="listOfMaterials" onclick="getResults('Koppar och kopparlegeringar')">Koppar och kopparlegeringar
+            </li>
+            <li class="listOfMaterials" onclick="getResults('Titan')">Titan</li>
+
+
+        </ul>
+        <p style="color: #00A0E1; margin-top: 2%;text-align: center;width: 50%;">*MISON skyddsgaser är inte avsedda för
+            rotskydd.</p>
+    </div>
+
+    <div id="PLASMA" class="w3-container gas" style="display:none">
+        <ul>
+            <li class="listOfMaterials" onclick="getResults('Olegerat/låglegerat stål')">Olegerat/låglegerat stål</li>
+            <li class="listOfMaterials" onclick="getResults('Rostfritt stål, austenitiskt')">Rostfritt stål,
+                austenitiskt
+            </li>
+            <li class="listOfMaterials" onclick="getResults('Rostfritt stål, duplex')">Rostfritt stål, duplex
+            </li>
+            <li class="listOfMaterials" onclick="getResults('Aluminium och aluminiumlegeringar')">Aluminium och
+                aluminiumlegeringar
+            </li>
+            <li class="listOfMaterials" onclick="getResults('Koppar och kopparlegeringar')">Koppar och kopparlegeringar
+            </li>
+            <li class="listOfMaterials" onclick="getResults('Titan')">Titan</li>
+
+
+        </ul>
+    </div>
+
+    <div id="MIG/MAG" class="w3-container gas" style="display:none">
+        <ul>
+            <li class="listOfMaterials" onclick="getResults('Olegerat/låglegerat stål')">Olegerat/låglegerat stål</li>
+            <li class="listOfMaterials" onclick="getResults('Rostfritt stål, austenitiskt')">Rostfritt stål,
+                austenitiskt
+            </li>
+            <li class="listOfMaterials" onclick="getResults('Rostfritt stål, duplex')">Rostfritt stål, duplex
+            </li>
+            <li class="listOfMaterials" onclick="getResults('Aluminium och aluminiumlegeringar')">Aluminium och
+                aluminiumlegeringar
+            </li>
+            <li class="listOfMaterials" onclick="getResults('Koppar och kopparlegeringar')">Koppar och kopparlegeringar
+            </li>
+
+
+        </ul>
+        <p style="color: #00A0E1; margin-top: 2%;">* MIG / MAG: hänvisar till svetsning med solid tråd och
+            metallpulverfylld rörtråd. För MAG svetsning med fluxfyllda rörtrådar (FCAW) är MISON 18 eller 25 vanligtvis
+            bra
+            val. Men följ tillverkaren av tillsatsmaterialets rekommendationer.</p>
+    </div>
+    <div id="MIG lödning" class="w3-container gas" style="display:none">
+        <ul>
+            <li class="listOfMaterials" onclick="getResults('Olegerat/låglegerat stål')">Olegerat/låglegerat stål</li>
+            <li class="listOfMaterials" onclick="getResults('Elförzinkat stål')">Elförzinkat stål
+            </li>
+            <li class="listOfMaterials" onclick="getResults('Varmförzinkat stål')">Varmförzinkat stål
+            </li>
+        </ul>
+    </div>
+
+    <div id="TIG" class="w3-container gas" style="display:none">
+        <ul>
+            <li class="listOfMaterials" onclick="getResults('Olegerat/låglegerat stål')">Olegerat/låglegerat stål</li>
+            <li class="listOfMaterials" onclick="getResults('Rostfritt stål, austenitiskt')">Rostfritt stål,
+                austenitiskt
+            </li>
+            <li class="listOfMaterials" onclick="getResults('Rostfritt stål, duplex')">Rostfritt stål, duplex
+            </li>
+            <li class="listOfMaterials" onclick="getResults('Aluminium och aluminiumlegeringar')">Aluminium och
+                aluminiumlegeringar
+            </li>
+            <li class="listOfMaterials" onclick="getResults('Koppar och kopparlegeringar')">Koppar och kopparlegeringar
+            </li>
+            <li class="listOfMaterials" onclick="getResults('Titan')">Titan</li>
+
+
+        </ul>
+    </div>
+
+</div>
+<div id="parent-div-choice" style="display: flex;">
+    <div id="left-side-content">
+        <div id="mobileImgDiv">
+            <img
+                src="https://static.prd.echannel.linde.com/wcsstore/SE_REN_Industrial_Gas_Store/images/SGG-broad-2.jpg" />
+        </div>
+        <div id="textDivFindGas">
+            <h1 style="margin-bottom: 5%;">Hitta rätt skydds- eller rotskyddsgas med hjälp av vår skyddsgasguide
+            </h1>
+            <p id="findGasP">Ett enkelt och praktiskt verktyg som hjälper dig att hitta den optimala skyddsgasen baserat
+                på
+                svetsmetod samt material. Lär dig mer om rekommenderade samt alternativa lösningar. </p>
+        </div>
+        <button type="button" id="find-gas" onclick="displayDiv()">Hitta rekommenderad skyddsgas</button>
+        <button type="button" id="find-material">Tillbaka</button>
+
+    </div>
+    <div id="right-side-content">
+        <img src="https://static.prd.echannel.linde.com/wcsstore/SE_REN_Industrial_Gas_Store/images/SGG-broad-2.jpg" />
+    </div>
+</div>
