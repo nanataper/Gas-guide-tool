@@ -1,0 +1,1031 @@
+<style type="text/css">
+    @media only screen and (max-width: 600px) {
+        #gas-guide-table {
+            display: table;
+            /* border: 1px solid #D2CDCD;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.43); */
+            width: 100%;
+            margin: 0 auto;
+            font-family: LindeDaxOffice;
+            text-align: center;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            padding: 20px;
+            border-collapse: collapse;
+            text-decoration: none;
+        }
+ 
+        #gas-guide-table tr {
+            border: solid #f1f1f1;
+            border-width: 0.2px 0;
+            cursor: pointer;
+            height: 40px;
+            vertical-align: baseline;
+            display: table;
+            width: 100%;
+        }
+ 
+        #gas-guide-table tr a {
+            width: 50%;
+            margin-left: 3%;
+            float: left;
+        }
+ 
+        #gas-guide-table th {
+            /* color: #00305c;
+  font-size: 13px;
+  padding: 10px;
+  text-align: -webkit-center; */
+            display: none;
+        }
+ 
+        table td {
+            color: #00305c;
+            font-family: LindeDaxOffice;
+            font-size: 12px;
+            padding-left: 2%;
+            text-align: left;
+            text-decoration: underline;
+        }
+ 
+ 
+ 
+        #recommended {
+            color: green;
+            font-size: 16px;
+            text-align: center;
+            font-weight: 400;
+        }
+ 
+        #notRec {
+            color: #CDD2CD;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 400;
+        }
+ 
+        #headingForResult {
+            color: #00305c;
+            font-family: LindeDaxOffice;
+            text-align: center;
+            margin-bottom: 2%;
+            font-size: 15px;
+            margin-top: 5%;
+        }
+ 
+        #explanation {
+            display: none;
+        }
+ 
+        #Explanationtext {
+            display: none;
+        }
+ 
+        #buttonsDiv {
+            width: 70%;
+            float: right;
+            display: initial;
+            margin-bottom: 10%;
+        }
+ 
+        #backButton,
+        #satisfied {
+            padding: 2%;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-family: LindeDaxOffice;
+            border-radius: 5px;
+ 
+        }
+ 
+        #backButton {
+            background-color: #00305c;
+            margin-right: 2%;
+            text-align: center;
+            width: 40%;
+        }
+ 
+        #satisfied {
+            background-color: #00A0E1;
+            text-align: center;
+            width: 50%;
+ 
+        }
+ 
+        #useFulLinksToContinue {
+            position: absolute;
+            background-color: white;
+            padding: 2%;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            top: 2%;
+            width: 90%;
+            height: 300px;
+            border-radius: 8px;
+            color: #00305c;
+            font-family: LindeDaxOffice;
+        }
+ 
+        #closeDialog {
+            cursor: pointer;
+            position: absolute;
+            padding: 12px 16px;
+            transform: translate(0%, -50%);
+            font-size: xx-large;
+            float: right;
+            left: 85%;
+            margin-top: 8%;
+ 
+        }
+ 
+        #closeDialog:hover {
+            background-color: #EBF0F2;
+        }
+ 
+        #dialogHeading {
+            display: inline-flex;
+            margin-bottom: 3%;
+        }
+ 
+        #quickLinks {
+            margin-top: 5%;
+        }
+ 
+        #targetBlankLinks,
+        #contactSupportButton {
+            border-radius: 6px;
+            background-color: #00A0E1;
+            padding: 2%;
+            border: none;
+            margin-right: 5px;
+            width: -webkit-fill-available;
+            margin-top: 2%;
+        }
+ 
+        #targetBlankLinks a,
+        #contactSupportButton a {
+            color: white;
+        }
+ 
+        #subHeadingResults {
+            color: #00305c;
+            font-family: LindeDaxOffice;
+            text-align: center;
+            margin-bottom: 2%;
+            font-size: 13px;
+        }
+ 
+        #table-description-div {
+            width: 100%;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            padding: 10px;
+            font-family: LindeDaxOffice;
+            font-size: 12px;
+            margin-bottom: 3%;
+        }
+ 
+        #descriprion-table-p {
+            line-height: 20px;
+        }
+ 
+        #notRec {
+            display: none;
+        }
+ 
+        #recommended,
+        #alternative,
+        #fartherBenefits {
+            visibility: hidden;
+            position: initial;
+            float: right;
+            text-align: center;
+        }
+ 
+        #recommended::after {
+            visibility: visible;
+            content: "Recommdend";
+            float: right;
+            color: #009B3C;
+            font-size: 16px;
+            text-align: center;
+            font-weight: 500;
+            box-sizing: unset;
+ 
+ 
+        }
+ 
+        #alternative::after {
+            color: #FFD200;
+            visibility: visible;
+            content: "Alternative";
+            float: right;
+            font-size: 16px;
+            text-align: center;
+            font-weight: 500;
+ 
+        }
+ 
+        #fartherBenefits::after {
+            color: #DC7800;
+            visibility: visible;
+            content: "Further Benefits";
+            float: right;
+            font-size: 16px;
+            text-align: center;
+            font-weight: 500;
+        }
+ 
+        tbody {
+            display: none;
+        }
+ 
+        #ratingCardDiv {
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            padding: 2%;
+            width: 400px;
+            height: 150px;
+            color: #00305c;
+            display: block;
+            line-height: 30px;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+ 
+        #ratingWidget {
+            width: 90%;
+            display: inline-block;
+            margin-bottom: 5%;
+            margin-top: 3%;
+        }
+ 
+        #userConsent {
+            opacity: 1;
+            width: 40px;
+            padding: 2%;
+            height: 15px;
+ 
+        }
+ 
+        .modal-content {
+            width: 98%;
+            margin: 0 auto;
+            margin-top: 5%;
+            padding: 2%;
+            height: auto;
+        }
+ 
+        #myBtn {
+            float: right;
+            margin-bottom: 3%;
+            border-radius: 6px;
+            background-color: #00A0E1;
+            padding: 1%;
+            width: 160px;
+            border: none;
+            margin-right: 5px;
+            color: white;
+            font-size: 19px;
+        }
+ 
+        #formbutton {
+            width: 90%;
+ 
+        }
+ 
+        .close-modal {
+            float: right;
+            cursor: pointer;
+            font-size: 19px;
+        }
+ 
+        #contactUsText {
+            font-size: 19px;
+            font-family: LindeDaxOffice;
+            color: #00305c;
+            margin-top: 5%;
+        }
+ 
+        #submitRating {
+            float: right;
+            border-radius: 6px;
+            background-color: #00A0E1;
+            padding: 1%;
+            width: 150px;
+            border: none;
+            margin-right: 5px;
+            color: white;
+            font-size: 19px;
+        }
+ 
+        #phone-number {
+            padding: 1%;
+            width: 200px;
+            border-radius: 3px;
+            border: 1px solid rgb(199, 199, 199);
+ 
+        }
+    }
+ 
+    @media only screen and (min-width: 601px) and (max-width: 800px) {
+        #gas-guide-table {
+            display: table;
+            border: 1px solid #D2CDCD;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.43);
+            width: 100%;
+            margin: 0 auto;
+            font-family: LindeDaxOffice;
+            text-align: center;
+            margin-top: 4%;
+            margin-bottom: 3%;
+            padding: 20px;
+            border-collapse: collapse;
+            text-decoration: none;
+ 
+ 
+        }
+ 
+        #gas-guide-table tr {
+            border: solid #CDD2CD;
+            border-width: 1px 0;
+            cursor: pointer;
+            height: 40px;
+            vertical-align: baseline;
+        }
+ 
+        #gas-guide-table th {
+            color: #00305c;
+            font-size: 13px;
+            padding: 10px;
+            text-align: -webkit-center;
+ 
+        }
+ 
+        table td {
+            color: #00305c;
+            font-family: LindeDaxOffice;
+            font-size: 12px;
+            padding-left: 2%;
+            text-align: left;
+            text-decoration: underline;
+        }
+ 
+ 
+ 
+        #recommended,
+        #alternative,
+        #fartherBenefits {
+            color: green;
+            font-size: 16px;
+            text-align: center;
+            font-weight: 400;
+        }
+ 
+        #notRec {
+            color: #CDD2CD;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 400;
+        }
+ 
+        #headingForResult {
+            color: #00305c;
+            font-family: LindeDaxOffice;
+            text-align: center;
+            margin-bottom: 2%;
+            font-size: 15px;
+            margin-top: 5%;
+        }
+ 
+        #explanation {
+            display: none;
+        }
+ 
+        #Explanationtext {
+            display: none;
+        }
+ 
+        #buttonsDiv {
+            width: 40%;
+            float: right;
+            display: initial;
+            margin-bottom: 10%;
+        }
+ 
+        #backButton,
+        #satisfied {
+            padding: 2%;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-family: LindeDaxOffice;
+            border-radius: 5px;
+ 
+        }
+ 
+        #backButton {
+            background-color: #00305c;
+            margin-right: 2%;
+            text-align: center;
+            width: 45%;
+        }
+ 
+        #satisfied {
+            background-color: #00A0E1;
+            text-align: center;
+            width: 50%;
+ 
+        }
+ 
+        #useFulLinksToContinue {
+            position: absolute;
+            background-color: white;
+            padding: 2%;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            top: 30%;
+            left: 10%;
+            width: 80%;
+            height: 220px;
+            border-radius: 8px;
+            color: #00305c;
+            font-family: LindeDaxOffice;
+        }
+ 
+        #closeDialog {
+            cursor: pointer;
+            position: absolute;
+            padding: 12px 16px;
+            transform: translate(0%, -50%);
+            font-size: large;
+            float: right;
+            left: 90%;
+            margin-top: 3%;
+ 
+        }
+ 
+        #closeDialog:hover {
+            background-color: #EBF0F2;
+        }
+ 
+        #dialogHeading {
+            display: inline-flex;
+            margin-bottom: 3%;
+        }
+ 
+        #quickLinks {
+            margin: 0 auto;
+            margin-top: 3%;
+            width: 80%;
+ 
+        }
+ 
+        #targetBlankLinks,
+        #contactSupportButton {
+            border-radius: 6px;
+            background-color: #00A0E1;
+            padding: 1%;
+            /* width: 150px; */
+            border: none;
+            margin-right: 5px;
+        }
+ 
+        #targetBlankLinks a,
+        #contactSupportButton a {
+            color: white;
+        }
+ 
+        #subHeadingResults {
+            color: #00305c;
+            font-family: LindeDaxOffice;
+            text-align: center;
+            margin-bottom: 2%;
+            font-size: 15px;
+        }
+ 
+        #table-description-div {
+            width: 80%;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            padding: 20px;
+            margin: auto;
+            color: #00305c;
+            font-family: LindeDaxOffice;
+            font-size: 18px;
+            margin-bottom: 3%;
+        }
+ 
+        #descriprion-table-p {
+            line-height: 30px;
+        }
+    }
+ 
+    @media only screen and (min-width: 801px) {
+        #gas-guide-table {
+            display: table;
+            border: 1px solid #D2CDCD;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.43);
+            border-radius: 10px;
+            width: 80%;
+            margin: 0 auto;
+            font-family: LindeDaxOffice;
+            text-align: center;
+            margin-top: 4%;
+            margin-bottom: 3%;
+            padding: 20px;
+            border-collapse: collapse;
+            text-decoration: none;
+ 
+ 
+        }
+ 
+        #gas-guide-table tr {
+            border: solid #CDD2CD;
+            border-width: 1px 0;
+            cursor: pointer;
+        }
+ 
+        #gas-guide-table th {
+            color: #00305c;
+            font-size: 20px;
+            padding: 10px;
+            text-align: -webkit-center;
+        }
+ 
+        /* 
+ table td {
+  color: #00305c;
+  font-family: LindeDaxOffice;
+  font-size: 20px;
+  padding-left: 2%;
+  text-align: left;
+ } */
+ 
+        table a {
+            text-decoration: underline;
+            color: #00305c;
+            font-family: LindeDaxOffice;
+            font-size: 20px;
+            padding-left: 2%;
+            text-align: left;
+ 
+        }
+ 
+ 
+ 
+        #recommended,
+        #alternative,
+        #fartherBenefits {
+            color: green;
+            font-size: 40px;
+            text-align: center;
+            font-weight: 400;
+        }
+ 
+        #notRec {
+            color: #CDD2CD;
+            font-size: 30px;
+            text-align: center;
+            font-weight: 400;
+        }
+ 
+        #headingForResult {
+            color: #00305c;
+            font-family: LindeDaxOffice;
+            text-align: center;
+            margin-bottom: 2%;
+            font-size: 30px;
+            margin-top: 5%;
+        }
+ 
+        #explanation {
+            border: 1px solid #00A0E1;
+            border-radius: 50%;
+            padding-left: 3%;
+            padding-right: 3%;
+            padding-bottom: 1%;
+            color: white;
+            background-color: #00A0E1;
+            font-size: initial;
+            cursor: pointer;
+        }
+ 
+        #Explanationtext {
+            display: none;
+        }
+ 
+        #explanation:hover~#Explanationtext {
+            position: absolute;
+            width: 300px;
+            height: 100px;
+            background: #FFFFFF;
+            border: 1px solid #CDD2CD;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+            display: block;
+            color: #00305c;
+            transition: ease-in-out 750ms;
+            font-size: 13px;
+            padding: 1%;
+            text-align: left;
+ 
+        }
+ 
+ 
+        #buttonsDiv {
+            width: 50%;
+            float: right;
+            display: initial;
+            margin-right: 2.5%;
+            margin-bottom: 10%;
+        }
+ 
+        #backButton,
+        #satisfied {
+            padding: 2%;
+            border-radius: 8px;
+            border: none;
+            color: white;
+            font-size: 25px;
+            font-family: LindeDaxOffice;
+        }
+ 
+        #backButton {
+            background-color: #00305c;
+            margin-right: 2%;
+            text-align: center;
+            width: 40%;
+        }
+ 
+        #satisfied {
+            background-color: #00A0E1;
+            text-align: center;
+            width: 40%;
+ 
+        }
+ 
+        #useFulLinksToContinue {
+            position: absolute;
+            background-color: white;
+            padding: 2%;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            top: 30%;
+            left: 20%;
+            width: 70%;
+            height: 250px;
+            border-radius: 8px;
+            color: #00305c;
+            font-family: LindeDaxOffice;
+        }
+ 
+        #closeDialog {
+            cursor: pointer;
+            position: absolute;
+            padding: 12px 16px;
+            transform: translate(0%, -50%);
+            font-size: large;
+            float: right;
+            left: 90%;
+            margin-top: 3%;
+ 
+        }
+ 
+        #closeDialog:hover {
+            background-color: #EBF0F2;
+        }
+ 
+        #dialogHeading {
+            display: inline-flex;
+            margin-bottom: 3%;
+        }
+ 
+        #quickLinks {
+            margin: 0 auto;
+            margin-top: 3%;
+            width: 80%;
+            text-align: -webkit-center;
+ 
+        }
+ 
+        #targetBlankLinks,
+        #contactSupportButton {
+            border-radius: 6px;
+            background-color: #00A0E1;
+            padding: 1%;
+            /* width: 150px; */
+            border: none;
+            margin-right: 5px;
+        }
+ 
+        #targetBlankLinks a,
+        #contactSupportButton a {
+            color: white;
+        }
+ 
+        #contactSupportButton {
+            color: white;
+        }
+ 
+        #subHeadingResults {
+            color: #00305c;
+            font-family: LindeDaxOffice;
+            text-align: center;
+            margin-bottom: 2%;
+            font-size: 22px;
+        }
+ 
+        #table-description-div {
+            width: 80%;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            padding: 20px;
+            margin: auto;
+            color: #00305c;
+            font-family: LindeDaxOffice;
+            font-size: 18px;
+            margin-bottom: 3%;
+        }
+ 
+        #descriprion-table-p {
+            line-height: 40px;
+        }
+ 
+        #ratingCardDiv {
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            padding: 2%;
+            width: 400px;
+            height: 150px;
+            color: #00305c;
+            display: block;
+            line-height: 30px;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            float: right;
+        }
+ 
+        #ratingWidget {
+            width: 90%;
+            display: inline-block;
+            margin-bottom: 5%;
+            margin-top: 3%;
+        }
+ 
+        #userConsent {
+            opacity: 1;
+            width: 40px;
+            padding: 2%;
+            height: 15px;
+ 
+        }
+ 
+        #formbutton {
+            width: 90%;
+ 
+        }
+ 
+        #contactUsText {
+            font-size: 19px;
+            font-family: LindeDaxOffice;
+            color: #00305c;
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+ 
+        #submitRating {
+            float: right;
+            border-radius: 6px;
+            background-color: #00A0E1;
+            padding: 1%;
+            width: 150px;
+            border: none;
+            margin-right: 5px;
+            color: white;
+            font-size: 19px;
+        }
+ 
+ 
+    }
+ 
+    .icon-bar {
+        position: fixed;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        transform: rotate(90deg);
+        right: 0;
+        font-style: normal;
+        margin-right: -50px;
+        height: 8px;
+        z-index: 1;
+ 
+    }
+ 
+    .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 12px;
+        transition: all 0.3s ease;
+        color: white;
+ 
+ 
+    }
+ 
+    .icon-bar a:hover {
+        background-color: #00A0E1;
+        text-decoration: none;
+    }
+ 
+    .LindeGas {
+        background: #00305c;
+        color: white;
+        font-family: LindeDaxOffice;
+        font-style: normal;
+        font-size: 16px;
+    }
+ 
+    #usefulLinks {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+ 
+    #usefulLinks p {
+        color: #00305c;
+        font-size: 20px;
+    }
+ 
+    /* rating style */
+    .rate {
+       width: 200px;
+       float: left;
+       height: 46px;
+       padding: 0 10px;
+       margin: auto;
+    }
+ 
+    .rate:not(:checked)>input {
+        display: none;
+    }
+ 
+    .rate:not(:checked)>label {
+        float: right;
+        width: 1em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 30px;
+        color: #ccc;
+    }
+ 
+    .rate:not(:checked)>label:before {
+        content: '★ ';
+    }
+ 
+    .rate>input:checked~label {
+        color: #ffc700;
+    }
+ 
+    .rate:not(:checked)>label:hover,
+    .rate:not(:checked)>label:hover~label {
+        color: #deb217;
+    }
+ 
+    .rate>input:checked+label:hover,
+    .rate>input:checked+label:hover~label,
+    .rate>input:checked~label:hover,
+    .rate>input:checked~label:hover~label,
+    .rate>label:hover~input:checked~label {
+        color: #c59b08;
+    }
+ 
+    #modalForm {
+        display: none;
+    }
+ 
+    #moreInfoHeading {
+        color: #00305c;
+        font-weight: 500;
+        font-size: 25px;
+        text-align: center;
+    }
+ 
+    #modalForm,
+    #modalFormMison {
+        background-color: white;
+        padding: 16px 20px;
+        border: none;
+        width: 50%;
+        margin: 0 auto;
+        position: absolute;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        top: 20%;
+        left: 25%;
+        z-index: 1;
+    }
+ 
+    .close-modal,
+    .close-modal-mison {
+        float: right;
+        width: 8%;
+        cursor: pointer;
+        text-align: left;
+        color: #00305c;
+    }
+ 
+    #firstName,
+    #lastName,
+    #message,
+    #messageMison,
+    #company,
+    #phoneNumber,
+    #emailAddress,
+    #contactRequestTime,
+    #emailAddressNonMison,
+    #emailAddressMison,
+    #lastNameMison,
+    #firstNameMison {
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        border-radius: 5px;
+    }
+ 
+    #firstName,
+    #lastName,
+    #company,
+    #phoneNumber,
+    #emailAddress,
+    #emailAddressNonMison,
+    #emailAddressMison,
+    #lastNameMison,
+    #firstNameMison {
+        height: 45px;
+    }
+ 
+    #message,
+    #messageMison {
+        height: 150px;
+    }
+ 
+    #sendNewsDiv,
+    #contactMeDiv {
+        display: flex;
+    }
+ 
+    #contactMe,
+    #sendNews,
+    #sendNewsMison {
+        opacity: 1;
+        border: 1px solid;
+        padding: 0;
+        width: 30px;
+    }
+ 
+    #modalFormHeading {
+        display: flex;
+        width: 100%;
+    }
+ 
+    #modalFormHeading h3 {
+        width: 90%;
+        color: #00305c;
+        font-weight: 500;
+        font-size: 22px;
+    }
+ 
+    #modalFormHeadingHr {
+        border: 0;
+        border-top: 1px solid #b9b9b9;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+ 
+    .submitContactForm,
+    .submitRating {
+        float: right;
+        color: white;
+        background-color: #00A0E1;
+        border: none;
+        padding: 1%;
+        border-radius: 5px;
+        width: 100px;
+    }
+ </style>
